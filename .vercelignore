@@ -1,0 +1,37 @@
+# Carpetas del código fuente que no se necesitan en el deployment
+cmd/
+internal/
+
+# Archivos de configuración local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos de logs
+*.log
+logs/
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Archivos de editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de testing
+*_test.go
+test/
+coverage.out
+
+# Documentación de desarrollo
+docs/
+README.md 
