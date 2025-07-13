@@ -12,7 +12,7 @@ func New() *echo.Echo {
 	webServer.Use(middleware.Logger())
 	webServer.Use(middleware.Recover())
 
-	webServer.GET("/health", func(c echo.Context) error {
+	webServer.GET("/api/health", func(c echo.Context) error {
 		return c.JSON(200, echo.Map{"status": "ok"})
 	})
 
