@@ -60,10 +60,17 @@ GET https://tu-proyecto.vercel.app/api/game/info
 
 ## Solución de problemas
 
-### ✅ Error resuelto: "Please change `package main` to `package handler`"
+### ✅ Errores resueltos:
+
+#### 1. "Please change `package main` to `package handler`"
 **Problema**: Error durante el build en Vercel
 **Solución**: Cambié `package main` a `package handler` en `api/index.go`
 **Motivo**: Vercel requiere que las funciones serverless usen `package handler`
+
+#### 2. "Function Runtimes must have a valid version"
+**Problema**: Error con la especificación del runtime
+**Solución**: Eliminé la configuración `"runtime": "go1.x"` del vercel.json
+**Motivo**: Vercel detecta automáticamente el runtime de Go
 
 ### Si sigues viendo 404:
 1. Verifica que el archivo `api/index.go` esté en la raíz del proyecto

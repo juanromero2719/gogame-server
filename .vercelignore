@@ -2,6 +2,9 @@
 cmd/
 internal/
 
+# Archivo del servidor de desarrollo local
+dev_server.go
+
 # Archivos de configuración local
 .env
 .env.local
